@@ -1,0 +1,23 @@
+<div class="layout layout--col gap--xlarge layout--center">
+  <div class="richtext gap--large">
+    <div class="content content--large clamp--20" data-pixel-perfect="true">
+      <p>{{ drawnVerse.text }}</p>
+    </div>
+    <span class="label label--underline">{{ drawnVerse.verse }}</span>
+  </div>
+  
+  <div class="divider"></div>
+
+  <div class="richtext gap--large">
+    <div class="content content--large clamp--20" data-pixel-perfect="true">
+      <p>{{ doctrinalVerse.text }}</p>
+    </div>
+    <span class="label label--underline">{{ doctrinalVerse.verse }}</span>
+  </div>
+</div>
+
+<div class="title_bar">
+  <img class="image" src="https://capypara.de/book_trmnl_black.svg">
+  <span class="title">{{ trmnl.plugin_settings.instance_name }}</span>
+  <span class="instance">{{ date.weekday }}, {{ date.day }}.{{ date.month }}.{{ date.year }}</span>
+</div>

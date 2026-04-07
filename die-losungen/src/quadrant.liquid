@@ -1,0 +1,27 @@
+<div class="layout">
+  <div class="columns">
+    <div class="column">
+      <div class="item">
+        <div class="content" data-content-limiter="true">
+          <span class="title title--small" data-clamp="3">{{ drawnVerse.text }}</span>
+          <span class="label label--small label--underline">{{ drawnVerse.verse }}</span>
+        </div>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <div class="item">
+        <div class="content" data-content-limiter="true">
+          <span class="title title--small"  data-clamp="3">{{ doctrinalVerse.text }}</span>
+          <span class="label label--small label--underline">{{ doctrinalVerse.verse }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="title_bar">
+  <img class="image" src="https://capypara.de/book_trmnl_black.svg">
+  <span class="title">{{ trmnl.plugin_settings.instance_name }}</span>
+  <span class="instance">{{ date.weekday }}, {{ date.day }}.{{ date.month }}.{{ date.year }}</span>
+</div>

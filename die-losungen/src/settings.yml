@@ -1,0 +1,32 @@
+#
+# Changes to this file will be overwritten by `trmnlp pull`.
+#
+# Docs: https://help.usetrmnl.com/en/articles/10542599-importing-and-exporting-private-plugins#h_581fb988f0
+#
+---
+strategy: polling
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: ''
+polling_verb: get
+framework_version: 2.3.7
+serverless_language: ''
+polling_url: https://api.losungen.app/v1/watchword/german/today.json
+polling_headers: ''
+polling_body: ''
+id: 230750
+custom_fields:
+- keyname: description
+  field_type: author_bio
+  name: About This Plugin
+  description: |-
+    This plugin displays the daily bible verses published by the Herrnhuter Brüdergemeine ("Die Losungen").
+    Using the plugin is subject to the <a href="https://www.losungen.de/digital/nutzungsbedingungen" target="_blank">terms of service</a>. This plugin is not officially endorsed by the Herrnhuter Brüdergemeine.<br><br>© <a href="https://www.herrnhuter.de" _target="_blank">Evangelische Brüder-Unität – Herrnhuter Brüdergemeine</a><br>Weitere Informationen finden Sie <a href="https://www.losungen.de" _target="_blank">hier</a>.
+  category: life
+  github_url: https://github.com/theCapypara/trmnl-small-recipes
+  learn_more_url: https://www.losungen.de/
+  description-de: |-
+    Dieses Plugin zeigt die täglichen Bibelverse der Herrnhuter Brüdergemeine ("Die Losungen") an.
+    Wenn Sie dieses Plugin nutzen, stimmen Sie den <a href="https://www.losungen.de/digital/nutzungsbedingungen" target="_blank">Nutzungsbedingungen</a> zu. Dies ist kein offizielles Plugin der Herrnhuter Brüdergemeine.<br><br>© <a href="https://www.herrnhuter.de" _target="_blank">Evangelische Brüder-Unität – Herrnhuter Brüdergemeine</a><br>Weitere Informationen finden Sie <a href="https://www.losungen.de" _target="_blank">hier</a>.
+name: Die Losungen
+refresh_interval: 720
