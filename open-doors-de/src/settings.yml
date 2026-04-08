@@ -1,0 +1,30 @@
+#
+# Changes to this file will be overwritten by `trmnlp pull`.
+#
+# Docs: https://help.usetrmnl.com/en/articles/10542599-importing-and-exporting-private-plugins#h_581fb988f0
+#
+---
+strategy: polling
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: ''
+polling_verb: get
+framework_version: 2.3.7
+serverless_language: ''
+polling_url: "https://www.opendoors.de/restprayerrequestdaily/{{ 'now' |  date: '%Y-%m-%d'  }}?_format=json"
+polling_headers: ''
+polling_body: ''
+custom_fields:
+- keyname: description
+  field_type: author_bio
+  name: About This Plugin
+  description: |-
+    Shows the current daily prayer request from <a href="https://www.opendoors.de/" target="_blank">Open Doors Germany</a>.
+    The author is not affiliated with Open Doors.
+  category: life
+  github_url: https://github.com/theCapypara/trmnl-small-recipes
+  learn_more_url: https://www.opendoors.de/
+  description-de: |-
+    Dieses Plugin zeigt das heutige Gebetsanliegen aus dem Gebetskalender von <a href="https://www.opendoors.de/" target="_blank">Open Doors Deutschland</a>.
+name: Open Doors Germany Prayer Request
+refresh_interval: 720

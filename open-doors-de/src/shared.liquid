@@ -1,0 +1,18 @@
+{% assign rq_suffix = "-" | append_random %}
+<script type="module" data-id="{{ instance_id }}">
+    const country = '{{ data[0].country | replace: "'", "" | strip_newlines }}';
+    const countryDom = new DOMParser().parseFromString(country, "text/html");
+
+    const body = '{{ data[0].body | replace: "'", "" | strip_newlines }}';
+
+    const date = '{{ data[0].date | replace: "'", "" | strip_newlines }}';
+    const dateDom = new DOMParser().parseFromString(date, "text/html");
+
+    const rqCountry = document.querySelector("#rq-country{{ rq_suffix }}");
+    const rqBody = document.querySelector("#rq-body{{ rq_suffix }}");
+    const rqDate = document.querySelector("#rq-date{{ rq_suffix }}");
+
+    rqCountry.textContent = countryDom.querySelector("a").text ?? country;
+    rqBody.innerHTML = body;
+    rqDate.textContent = dateDom.querySelector("time").textContent ?? date;
+</script>
